@@ -1,0 +1,97 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    /* colors */
+    --blue: #2928A3;
+    --watermelon: #FF4757;
+    --quince-jelly: #F0932B;
+    --white: #ffff;
+    --black: #000;
+}
+
+/* header */
+.header{
+    height: 346px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.header-logo{
+    padding: 10px;
+    display: flex;
+}
+
+.header-logo__logo img{
+    width: 200px;
+    height: 150px;
+}
+.header-logo__title{
+    margin: auto;
+}
+.header-logo__title--importer{
+    text-align: center;
+    width: 200px;
+    background-color: var(--watermelon);
+    border-radius: 2px;
+}
+.header-logo__title--title{
+    white-space: 5px;
+    position: relative;
+    bottom: 8px;
+}
+/*El header-logo seccion superior. El buscador */
+
+.header-logo__search{
+    background-color: var(--white);
+    width: 433px;
+    height: 48px;
+    margin-top: 40px;
+    border-radius: 4px;
+    display: flex;
+
+}
+
+.header-logo__search input {
+    width: 345px;
+    margin-left: 30px;
+    border: none;
+    position: relative;
+    top: 6px;
+    height: 30px;
+}
+.header-logo__search input:focus {
+    outline: none
+}
+
+.header-logo__search--lup img{
+    width: 30px;
+    margin: 10px;
+ }
+
+
+/*El header-logo seccion superior. El carrito de compras */
+
+.header-logo__shop{
+  display: flex;
+  flex-direction: column;
+}
+.header-logo__shop--accountant{
+    width: 40px;
+    height: 40px;
+    background-color: var(--watermelon);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    position: relative;
+    right: 18px;
+    top: 10px;
+
+}
+.header-logo__shop img{
+    width: 120px;
+}
