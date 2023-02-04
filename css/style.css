@@ -17,7 +17,7 @@ html{
 
 /* header */
 .header{
-    height: 346px;
+    height: 230px;
     background-color: var(--blue);
     color: var(--white);
 }
@@ -50,7 +50,7 @@ html{
     background-color: var(--white);
     width: 433px;
     height: 48px;
-    margin-top: 40px;
+    margin-top: 46px;
     border-radius: 4px;
     display: flex;
 
@@ -69,7 +69,7 @@ html{
 }
 
 .header-logo__search--lup img{
-    width: 30px;
+    width: 25px;
     margin: 10px;
  }
 
@@ -94,4 +94,213 @@ html{
 }
 .header-logo__shop img{
     width: 120px;
+}
+
+/* seccion de navegación del header */
+
+.header-nav{
+    display: flex;
+    border-top: 3px solid #D7CECE;
+    padding-top: 25px;
+    margin-top: -18px;
+    width: 90%;
+}
+.header-nav__navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav__navigation--ol{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    left: calc(-20% - 20px);
+}
+
+.header-nav__navigation ol li a{
+    margin-left: 86px;
+    cursor: pointer;
+}
+
+/* header redes sociales  */
+.header-nav__social{
+    position: relative;
+    bottom: 15px;
+    left: 60px;
+}
+.header-nav__social--figure img{
+    width: 40px;
+    margin-right: 80px;
+}
+
+.header-nav__social--figure img:nth-child(2){
+    width: 25px;
+}
+
+/* empieza la sección de el slide con animación */
+
+.slider-container{
+    height: 450px;
+    
+}
+.slider-drywall {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.slider-drywall--background1{
+    width: 100%;
+}
+.slider-drywall--background1 img{
+    width: 100%
+}
+.slider-drywall--details{
+    background: linear-gradient(269.73deg, #1A1C19 -0.58%, #5C5851 58.61%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #ffff;
+    height: 99.3%;
+}
+.slider-drywall--details h1{
+  margin-top: 60px;
+  font-size: 40px;
+}
+.slider-drywall--details p{
+    margin-top: 55px;
+    width: 77%;
+    font-size: 28px;
+}
+.slider-drywall--details button{
+    width: 256px;
+    height: 62px;
+    margin: auto;
+    position: relative;
+    background: var(--watermelon);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Inter', sans-serif;
+}
+.slider-drywall--details button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* flechas */
+
+.slider-arrow{
+   width: 100%;
+   position: relative;
+   bottom: 15rem;
+   display: flex;
+}
+.slider-arrow__left {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--white);
+    position: relative;
+    display: flex;
+    right: 28%;
+}
+.slider-arrow__left img{
+    display: flex;
+    align-self: center;
+}
+.slider-arrow__left:hover{
+    -webkit-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+
+.slider-arrow__right{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--white);
+    margin-left: 50px;
+    position: relative;
+    display: flex;
+    left: 28%;
+}
+.slider-arrow__right:hover{
+    -webkit-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 6px 14px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.slider-arrow__right img{
+    display: flex;
+    align-self: center;
+}
+
+/* cicle bottom */
+
+.slide-circle{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 125px;
+    width: 10%;
+}
+.slide-circle--1{
+    width: 40px;
+    height: 40px;
+    background-color: var(--watermelon);
+    border-radius: 50%;
+}
+.slide-circle--2{
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+/* Navigation cards */
+.card{
+    background-color: #E9E3E1;
+    height: 400px;
+}
+.card-container{
+    width: 70%;    
+    margin: 30px auto;
+    display: flex;
+
+}
+.card-background{
+    width: 250px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    margin-top: 50px;
+}
+.card-background h4{
+    font-size: 18px;
+    color: #6c6c6c;
+    text-align: center;
+}
+.card-background:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.tajet--transport img{
+    width: 240px;
+    display: flex;
+    padding-bottom: 68px;
+}
+.card--smartphone img{
+    width: 200px;
+    display: flex;
+}
+.card--quality img{
+    width: 200px;
+    display: flex;
 }

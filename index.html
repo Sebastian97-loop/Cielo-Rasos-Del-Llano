@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,600&       display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap" rel="stylesheet">
     <title>Cielos Rasos Del Llano</title>
 </head>
 <body>
@@ -36,7 +39,7 @@
         </div>
         <div class="header-nav">
             <nav class="header-nav__navigation">
-                <ol>
+                <ol class="header-nav__navigation--ol">
                     <li><a href="#"></a>PVC</li>
                     <li><a href="#"></a>Pintura</li>
                     <li><a href="#"></a>Drywall</li>
@@ -44,7 +47,7 @@
                 </ol>
             </nav>
             <div class="header-nav__social">
-                <figure>
+                <figure class="header-nav__social--figure">
                     <img src="./img/icons/whatsapp.png" alt="whatsapp icon">
                     <img src="./img/icons/facebook.png" alt="facebook icon">
                     <img src="./img/icons/instagram.png" alt="instagram icon">
@@ -53,8 +56,38 @@
         </div>
     </header>
 
-    <section></section>
-    <section></section>
+    <section class="slider-container">
+        <div class="slider-drywall">
+            <figure class="slider-drywall--background1">
+                <img src="./img/Background/cielo-rasos1.jpg" alt="house with drywall finishes">
+             </figure>
+             <div class="slider-drywall--details">
+                <h1>Acabados en Drywall</h1>
+                <p>Contamos con mas de 12 años de experiencia en acabados con tabla roca o Drywall. Ecuentra nuestro producto aquí</p>
+                <button>Drywall</button>
+             </div>
+        </div>
+        <div class="slider-arrow">
+                <div class="slider-arrow__left">
+                    <img src="./img/icons/Vector-left.svg" alt="icon arrow left">
+                </div>
+                <div  class="slider-arrow__right">
+                    <img src="./img/icons/Vector-right.svg" alt="icon arrow right">
+                </div>
+        </div>
+        <div class="slide-circle">
+            <div class="slide-circle--1"></div>
+            <div class="slide-circle--2"></div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="card-container">
+              <div class="tajet--transport card-background"><img src="./img/icons/descarga-de-camion.png" alt="truck transport"><h4>Transporte eficaz y confiable</h4></div>
+              <div class="card--smartphone card-background"><img src="./img/icons/Allura-Giant-Phone.png" alt="Phone and a person"><h4>Te vendemos solo lo que necesitas</h4></div>
+              <div class="card--quality card-background"><img src="./img/icons/stock-illustration-isometric.png" alt="isometric person work"><h4>Calidad y rendimiento</h4></div>
+        </div>
+    </section>
     <section></section>
     <section></section>
     <footer></footer>
