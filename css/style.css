@@ -29,6 +29,7 @@ html{
 .header-logo__logo img{
     width: 200px;
     height: 150px;
+    cursor: pointer;
 }
 .header-logo__title{
     margin: auto;
@@ -79,6 +80,7 @@ html{
 .header-logo__shop{
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .header-logo__shop--accountant{
     width: 40px;
@@ -112,16 +114,18 @@ html{
 
 .header-nav__navigation--ol{
     display: flex;
-    text-decoration: none;
     list-style: none;
     position: relative;
     left: calc(-20% - 20px);
 }
 
-.header-nav__navigation ol li a{
+.header-nav__navigation--ol li a{
     margin-left: 86px;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
+
 
 /* header redes sociales  */
 .header-nav__social{
@@ -132,6 +136,7 @@ html{
 .header-nav__social--figure img{
     width: 40px;
     margin-right: 80px;
+    cursor: pointer;
 }
 
 .header-nav__social--figure img:nth-child(2){
@@ -304,3 +309,180 @@ html{
     width: 200px;
     display: flex;
 }
+
+/* seccion de logo principal */
+
+.logo-section{
+    width: 100%;
+    height: 800px;
+    background-color: #8E8ECC;
+}
+.logo-section__title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    font-family: 'Inter', sans-serif;
+}
+.logo-section__title h1{
+    font-size: 80px;
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+}
+.logo-section__title p{
+    font-size: 22px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    color: var(--white);
+    font-weight: 700;
+}
+.logo-section__logo img{
+    width: 500px;
+}
+
+.logo-section__icon-nav {
+    display: flex;
+    margin-top: 40px;
+}
+.logo-section__icon-nav div a{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--white);
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+
+}
+.logo-section__icon-nav--drywall{
+    display: flex;
+    flex-direction: column;
+}
+.logo-section__icon-nav--drywall a{
+    background-color: var(--blue);
+}
+
+.logo-section__icon-nav--eterboard{
+    display: flex;
+    flex-direction: column;
+}
+.logo-section__icon-nav--eterboard a{
+    background-color: #F6636F;
+}
+
+.logo-section__icon-nav--pvc{
+    display: flex;
+    flex-direction: column;
+}
+.logo-section__icon-nav--pvc a{
+    background-color: #F0932B;
+}
+
+/* seccion pinturas */
+
+.section-paint{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #E4E5E9;
+}
+.section-paint__text{
+    position: relative;
+    left: 100px;
+    margin-top: 20px;
+}
+.section-paint__text h2{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 134.455px;
+    line-height: 163px;
+    background: linear-gradient(90.41deg, #100fe9 9.41%, rgb(193 122 14 / 90%) 67.87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.section-paint__text p{
+    font-size: 33px;
+    font-weight: 700;
+    color: #6d6c6c;
+    font-family: 'Inter', sans-serif;
+}
+.section-paint__text p b{
+    color: var(--quince-jelly);
+}
+.section-paint__text button{
+    width: 220px;
+    height: 50px;
+    background: #F6636F;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 23px;
+    font-weight: bold;
+    margin-left: 160px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer*/
+
+.footer{
+    width: 100%;
+    height: 500px;
+    background-color: #E9E3E1;
+}
+.footer h3{
+    font-size: 44px;
+    text-align: center;
+    padding: 60px 0;
+}
+.footer--nav{
+    display: flex;
+}
+.footer--nav li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.footer--nav li img{
+    cursor: pointer;
+}
+.footer--nav li a{
+    text-decoration: none;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #6d6c6c;
+    font-weight: bold;
+}
+.footer--credits{
+    display: flex;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.footer--credits__container a{
+    text-decoration: none;
+}
+.footer--credits__container p{
+    text-align: center;
+}
+.footer--credits__container p:hover{
+    color: #100fe9;
+}
+.footer--credits__container img:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    
+}
+
+
+/* Estilos pagina PVC  */
+/*  */
+
