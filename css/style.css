@@ -10,8 +10,10 @@ html{
     /* colors */
     --blue: #2928A3;
     --watermelon: #FF4757;
+    --watermelon-soft: #ff6e7a;
     --quince-jelly: #F0932B;
     --white: #ffff;
+    --white-soft: #dddd;
     --black: #000;
 }
 
@@ -145,20 +147,30 @@ html{
 
 /* empieza la sección de el slide con animación */
 
-.slider-container{
-    height: 450px;
-    
-}
+.slide{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
 .slider-drywall {
     width: 100%;
-    display: grid;
-    grid-template-columns: 60% 40%;
 }
-.slider-drywall--background1{
+.slider-drywall--background{
     width: 100%;
 }
-.slider-drywall--background1 img{
+.slider-drywall--background img{
     width: 100%
+}
+.slider-epoxi--background img{
+    width: 1424px;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.slider-pintura--background img{
+ width: 100%;
+ object-fit: cover;
 }
 .slider-drywall--details{
     background: linear-gradient(269.73deg, #1A1C19 -0.58%, #5C5851 58.61%);
@@ -167,7 +179,7 @@ html{
     flex-direction: column;
     text-align: center;
     color: #ffff;
-    height: 99.3%;
+    height: 403px;
 }
 .slider-drywall--details h1{
   margin-top: 60px;
@@ -196,6 +208,65 @@ html{
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.slider-exterior--background img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+.icon-check img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 12px;
+    right: 15px;
+}
+
+.slider-exterior--details{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 403px;
+}
+.slider-exterior--details h1{
+    font-size: 30px;
+    width: 54%;
+    margin:20px auto;
+  }
+  .slider-exterior--details p{
+    margin-top: 40px;
+    width: 77%;
+    font-size: 20px;
+    padding-left: 60px;
+}
+.slider-exterior--details button{
+    width: 256px;
+    height: 62px;
+    margin: auto;
+    position: relative;
+    background: var(--watermelon-soft);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: 'Inter', sans-serif;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: .5s;
+  }
+  
+  @keyframes fade{
+    from {opacity: .4}
+    to { opacity: 1}
+  }
+/* index PVC */
+
+.slider-pvc{
+    display: flex;
+}
+
+
 /* flechas */
 
 .slider-arrow{
@@ -203,6 +274,7 @@ html{
    position: relative;
    bottom: 15rem;
    display: flex;
+   top: 150px;
 }
 .slider-arrow__left {
     width: 60px;
@@ -254,24 +326,38 @@ html{
     position: relative;
     bottom: 125px;
     width: 10%;
+    top: 290px;
+}
+.slide-circle--1,.slide-circle--2,.slide-circle--3:hover{
+    cursor: pointer;
 }
 .slide-circle--1{
-    width: 40px;
-    height: 40px;
-    background-color: var(--watermelon);
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-soft);
     border-radius: 50%;
 }
 .slide-circle--2{
-    width: 40px;
-    height: 40px;
-    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-soft);
     border-radius: 50%;
+}
+.slide-circle--3{
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-soft);
+    border-radius: 50%;
+}
+.active-dot{
+    background-color: var(--watermelon);
 }
 
 /* Navigation cards */
 .card{
     background-color: #E9E3E1;
     height: 400px;
+    margin-top: 310px;
 }
 .card-container{
     width: 70%;    
@@ -484,5 +570,15 @@ html{
 
 
 /* Estilos pagina PVC  */
+.slider-pvc h1{
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+.slider-pvc p{
+    font-size: 17px;
+    width: 100%;
+}
 /*  */
 
