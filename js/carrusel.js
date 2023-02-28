@@ -1,3 +1,5 @@
+// codigo carrusel
+
 let slider_index = 0;
 
 function show_slide(index) {
@@ -37,4 +39,5 @@ function show_slide(index) {
 
   setInterval(() => {
     show_slide(++slider_index)
-  }, 3000);
+  }, 4000);
+

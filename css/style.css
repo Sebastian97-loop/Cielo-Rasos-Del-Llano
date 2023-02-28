@@ -19,40 +19,61 @@ html{
 
 /* header */
 .header{
-    height: 230px;
     background-color: var(--blue);
     color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    transition: all 900ms;
 }
+
+.header-transform .header-logo{
+    transform: translateY(-100%);
+    /* opacity: 0; */
+    
+}
+.header-transform .header-nav{
+    position: relative;
+    position: relative;
+    /* bottom: 100px; */
+ }
 .header-logo{
-    padding: 10px;
+    padding: 0 10px;
     display: flex;
 }
 
 .header-logo__logo img{
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     cursor: pointer;
+    position: relative;
+    left: 48px;
 }
 .header-logo__title{
-    margin: auto;
+    margin: 37px 0 0 auto;
 }
 .header-logo__title--importer{
     text-align: center;
-    width: 200px;
+    width: 150px;
     background-color: var(--watermelon);
     border-radius: 2px;
+    font-size: 12px;
 }
 .header-logo__title--title{
     white-space: 5px;
     position: relative;
     bottom: 8px;
+    font-size: 16px;
 }
+
+
+
 /*El header-logo seccion superior. El buscador */
 
 .header-logo__search{
     background-color: var(--white);
-    width: 433px;
-    height: 48px;
+    width: 333px;
+    height: 33px;
     margin-top: 46px;
     border-radius: 4px;
     display: flex;
@@ -60,12 +81,9 @@ html{
 }
 
 .header-logo__search input {
-    width: 345px;
-    margin-left: 30px;
+    width: 100%;
     border: none;
-    position: relative;
-    top: 6px;
-    height: 30px;
+    height: 90%;
 }
 .header-logo__search input:focus {
     outline: none
@@ -73,7 +91,7 @@ html{
 
 .header-logo__search--lup img{
     width: 25px;
-    margin: 10px;
+    margin: 4px;
  }
 
 
@@ -85,8 +103,8 @@ html{
   cursor: pointer;
 }
 .header-logo__shop--accountant{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: var(--watermelon);
     border-radius: 50%;
     display: grid;
@@ -97,7 +115,7 @@ html{
 
 }
 .header-logo__shop img{
-    width: 120px;
+    width: 110px;
 }
 
 /* seccion de navegación del header */
@@ -127,6 +145,11 @@ html{
     color: white;
     text-decoration: none;
 }
+.header-nav__navigation--ol-border{
+    border: solid var(--watermelon) 3px;
+    border-radius: 3px;
+    padding: 8px;
+}
 
 
 /* header redes sociales  */
@@ -146,7 +169,11 @@ html{
 }
 
 /* empieza la sección de el slide con animación */
-
+.slider-container{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px; */
+}
 .slide{
     height: 100%;
     width: 100%;
@@ -160,7 +187,8 @@ html{
     width: 100%;
 }
 .slider-drywall--background img{
-    width: 100%
+    width: 100%;
+    height: 100.80%;
 }
 .slider-epoxi--background img{
     width: 1424px;
@@ -228,12 +256,12 @@ html{
     height: 403px;
 }
 .slider-exterior--details h1{
-    font-size: 30px;
+    font-size: 38px;
     width: 54%;
     margin:20px auto;
   }
   .slider-exterior--details p{
-    margin-top: 40px;
+    margin-top: 20px;
     width: 77%;
     font-size: 20px;
     padding-left: 60px;
@@ -254,6 +282,9 @@ html{
 .fade{
     animation-name: fade;
     animation-duration: .5s;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
   }
   
   @keyframes fade{
@@ -522,44 +553,76 @@ html{
 
 .footer{
     width: 100%;
-    height: 500px;
+    height: 350px;
     background-color: #E9E3E1;
+ 
 }
-.footer h3{
-    font-size: 44px;
+.footer-contain{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+.footer h1{
+    font-size: 27px;
     text-align: center;
-    padding: 60px 0;
+    position: relative;
+    top: 20px;
+    color: #3e4949;
 }
 .footer--nav{
-    display: flex;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 130px 130px;
+    place-items: center;
+
 }
 .footer--nav li {
     list-style: none;
     display: flex;
     flex-direction: column;
- 
 }
+
 .footer--nav li img{
     cursor: pointer;
+    width: 45px;
 }
-.footer--nav li a{
+.facebook {
+    width: 20px;
+    height: 80px;
+}
+.instagram{
+    position: relative;
+    left: 70px;
+}
+.footer__log{
+    display: flex;
+    flex-direction: column;
+    color: var(--blue);
+}
+.footer__log--img{
+    width: 200px;
+    margin: auto;
+}
+/* .footer--nav li a{
     text-decoration: none;
     margin-top: 40px;
     font-size: 24px;
     color: #6d6c6c;
     font-weight: bold;
-}
-.footer--credits{
+} */
+
+/* .footer--credits{
     display: flex;
     margin-top: 50px;
     cursor: pointer;
-}
+} */
 .footer--credits__container a{
     text-decoration: none;
 }
-.footer--credits__container p{
+/* .footer--credits__container p{
     text-align: center;
-}
+} */
 .footer--credits__container p:hover{
     color: #100fe9;
 }
@@ -570,6 +633,7 @@ html{
 
 
 /* Estilos pagina PVC  */
+/* slide */
 .slider-pvc h1{
     font-size: 40px;
     width: 100%;
@@ -580,5 +644,114 @@ html{
     font-size: 17px;
     width: 100%;
 }
+
+/* main y side */
+
+.seccion-contain{
+    width: 100%;
+    display: flex;
+
+}
+.side{
+    width: 30%;
+}
+.side__nav{
+    margin-top: 59px;
+}
+.slide-container__logo{
+    position: relative;
+    top: 30px;
+    left: 40px;
+    display: flex;
+}
+.logo img{
+    width: 166px;
+    height: 70px;
+    margin-top: 30px;
+}
+.header-logo__title--section{
+    margin-left: 50px;
+}
+.header-logo__title--section h2{
+    font-size: 15px;
+    width: 130px;
+    margin-top: 20px;
+    color: var(--white);
+    position: relative;
+    top: 20px;
+}
+.header-logo__title--section h1{
+    font-size: 25px;
+}
+.side__nav ol{
+    display: flex;
+    flex-direction: column;
+    line-height: 4;
+}
+.side__nav ol li{
+    list-style: none;
+}
+.side__nav ol li a{
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    top: 20px;
+}
+.side__nav ol li a:hover{
+    color: #100fe9;
+}
+.main{
+    width: 80%;
+}
+.main--pvc{
+    color: var(--watermelon);
+}
+.main h1{
+    margin: 60px auto;
+    text-align: center;
+}
+.main h2{
+    margin: 80px 0 40px 20px;
+}
+
+.main__section{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main__target-shop h6{
+    font-size: 18px;
+    margin: 30px 0;
+    font-weight: 500;
+}
+
+.icon-shop {
+    width: 144px;
+    height: 147px;
+    object-fit: cover;
+}
+.icon-shop:hover{
+    cursor: pointer;
+}
+
+.icon-check {
+    width: 20px;
+    height: 20px;
+}
+.main__target-shop--check{
+    margin-top: 25px;
+    display: flex;
+    position: relative;
+    right: 15px;
+}
+.main__target-shop--price{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
 /*  */
+
 
