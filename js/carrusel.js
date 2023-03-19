@@ -14,7 +14,7 @@ function show_slide(index) {
       dots[i].classList.remove('active-dot');
     }
   
-    slides[slider_index].style.display = 'flex';
+    slides[slider_index].style.display = 'grid';
     dots[slider_index].classList.add('active-dot');
   }
 
@@ -37,7 +37,7 @@ function show_slide(index) {
     })
   });
 
-  setInterval(() => {
-    show_slide(++slider_index)
-  }, 4000);
+  // setInterval(() => {
+  //   show_slide(++slider_index)
+  // }, 4000);
 

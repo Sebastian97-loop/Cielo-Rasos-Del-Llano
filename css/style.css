@@ -6,6 +6,10 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 :root{
     /* colors */
     --blue: #2928A3;
@@ -16,41 +20,123 @@ html{
     --white-soft: #dddd;
     --black: #000;
 }
+/* menu desplegable con el boton */
+
+.menu{
+    position: absolute;
+    z-index: 2000;
+    width: 88%;
+    height: 110%;
+    background-color: #1E272E;
+    box-shadow: 120px 4px 0px rgba(0, 0, 0, 0.73);
+    border-radius: 3px;
+    top: -5px;
+    transition: all .6s ease;
+    display: none;
+}
+.menu a{
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+    left: 30px;
+    top: 30px;
+}
+.menu-nav__ol{
+    height: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+}
+.menu-nav__ol li a{
+    font-size: 30px;
+}
+.menu-log{
+    display: flex;
+}
+.menu-log__logo a img{
+    position: relative;
+    left: 40px;
+    bottom: 70px;
+}
+.menu-log__tittle{
+    color: var(--white);
+    position: relative;
+    right: 40px;
+    bottom: 40px;
+}
+
+.menu-close{
+    background-color: transparent;
+    border: none;
+
+
+}
+.menu-close img {
+    position: relative;
+    left: 120px;
+    bottom: 10px; 
+}
+.active{
+    transform: translate(-900px);
+}
 
 /* header */
 .header{
+    width: 100%;
     background-color: var(--blue);
     color: var(--white);
     position: sticky;
     top: 0;
     z-index: 1020;
     transition: all 900ms;
+    filter: drop-shadow(3px 10px 4px rgba(0, 0, 0, 0.27));
+}
+.header-logo__menu{
+    display: none;
+}
+.header-logo__menu--button{
+    background-color: transparent;
+    border: none;
+    margin-top: 25px;
+    display: none;
+}
+.header-logo__menu--button:active{
+    transform: scale(1.1);
 }
 
+
+
+.header--scroll-down {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+.header--scroll-up {
+    top: 0;
+    opacity: 1;
+  }
 .header-transform .header-logo{
     transform: translateY(-100%);
     /* opacity: 0; */
     
 }
-.header-transform .header-nav{
-    position: relative;
-    position: relative;
-    /* bottom: 100px; */
- }
+
 .header-logo{
     padding: 0 10px;
     display: flex;
 }
 
 .header-logo__logo img{
-    width: 150px;
-    height: 100px;
+    width: 130px;
+    height: 90px;
     cursor: pointer;
     position: relative;
-    left: 48px;
+    left: 18px;
+
 }
 .header-logo__title{
-    margin: 37px 0 0 auto;
+    margin: 30px 0 0 auto;
 }
 .header-logo__title--importer{
     text-align: center;
@@ -74,7 +160,7 @@ html{
     background-color: var(--white);
     width: 333px;
     height: 33px;
-    margin-top: 46px;
+    margin-top: 27px;
     border-radius: 4px;
     display: flex;
 
@@ -121,26 +207,24 @@ html{
 /* seccion de navegación del header */
 
 .header-nav{
+    width: 100%;
     display: flex;
     border-top: 3px solid #D7CECE;
     padding-top: 25px;
-    margin-top: -18px;
-    width: 90%;
+   
 }
 .header-nav__navigation{
     display: flex;
-    justify-content: space-between;
+    width: 50%;
 }
 
 .header-nav__navigation--ol{
     display: flex;
     list-style: none;
-    position: relative;
-    left: calc(-20% - 20px);
+    width: 100%;
 }
 
 .header-nav__navigation--ol li a{
-    margin-left: 86px;
     cursor: pointer;
     color: white;
     text-decoration: none;
@@ -169,11 +253,7 @@ html{
 }
 
 /* empieza la sección de el slide con animación */
-.slider-container{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 400px; */
-}
+
 .slide{
     height: 100%;
     width: 100%;
@@ -185,16 +265,23 @@ html{
 }
 .slider-drywall--background{
     width: 100%;
+
 }
 .slider-drywall--background img{
     width: 100%;
-    height: 100.80%;
-}
-.slider-epoxi--background img{
-    width: 1424px;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
-    overflow: hidden;
+}
+.slider-epoxi {
+    /* display: block !important; */
+}
+.slider-epoxi--background {
+    background-image: url("../img/Background/Banner_Pag_Nuevo_Epoxi_Acryl.jpg");
+    width: 200%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .slider-pintura--background img{
  width: 100%;
@@ -207,11 +294,11 @@ html{
     flex-direction: column;
     text-align: center;
     color: #ffff;
-    height: 403px;
 }
 .slider-drywall--details h1{
   margin-top: 60px;
   font-size: 40px;
+  
 }
 .slider-drywall--details p{
     margin-top: 55px;
@@ -235,34 +322,49 @@ html{
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
+.slider-drywall--details button a{
+    text-decoration: none;
+    color: var(--white);
+}
 
 .slider-exterior--background img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .icon-check img{
     width: 40px;
     height: 40px;
-    position: relative;
-    top: 12px;
-    right: 15px;
+
 }
 
+.slider-exterior--details button a{
+    text-decoration: none;
+    color: var(--white);
+}
 .slider-exterior--details{
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 403px;
+  
 }
+
 .slider-exterior--details h1{
     font-size: 38px;
-    width: 54%;
-    margin:20px auto;
+    margin: 30px 100px 30px;
   }
+
+  .slider-exterior--details-p{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.slider-exterior--details-p div{
+    display: flex;
+    margin: 20px 0;
+}
   .slider-exterior--details p{
-    margin-top: 20px;
-    width: 77%;
+    width: 100%;
     font-size: 20px;
     padding-left: 60px;
 }
@@ -279,12 +381,15 @@ html{
     font-size: 21px;
     font-family: 'Inter', sans-serif;
 }
+.slider-exterior--details button:hover{
+    cursor: pointer;
+}
 .fade{
     animation-name: fade;
     animation-duration: .5s;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 400px;
+    height: 420px;
   }
   
   @keyframes fade{
@@ -305,7 +410,7 @@ html{
    position: relative;
    bottom: 15rem;
    display: flex;
-   top: 150px;
+   top: 200px;
 }
 .slider-arrow__left {
     width: 60px;
@@ -355,7 +460,6 @@ html{
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 125px;
     width: 10%;
     top: 290px;
 }
@@ -506,7 +610,10 @@ html{
 
 .section-paint{
     width: 100%;
-    height: 500px;
+    height: 450px;
+    background-image: url("../img/Background/background-pinturas.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #E4E5E9;
@@ -526,6 +633,7 @@ html{
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
 .section-paint__text p{
     font-size: 33px;
     font-weight: 700;
@@ -543,30 +651,44 @@ html{
     color: var(--white);
     font-size: 23px;
     font-weight: bold;
-    margin-left: 160px;
-    margin-top: 30px;
     border: none;
     cursor: pointer;
+    display: flex;
+    margin: 20px auto;
+}
+.section-paint__text button a{
+    text-decoration: none;
+    color: var(--white);
 }
 
+.section-paint__picture{
+    margin-top: 30px
+}
+
+.section-paint__picture img{
+    width: 100%;
+
+}
 /* Footer*/
 
 .footer{
     width: 100%;
-    height: 350px;
+    height: 100%x;
     background-color: #E9E3E1;
+    margin-top: -19px;
  
 }
 .footer-contain{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  padding-top: 10px;
 }
 .footer h1{
     font-size: 27px;
     text-align: center;
     position: relative;
-    top: 20px;
+    top: 47px;
     color: #3e4949;
 }
 .footer--nav{
@@ -604,19 +726,7 @@ html{
     width: 200px;
     margin: auto;
 }
-/* .footer--nav li a{
-    text-decoration: none;
-    margin-top: 40px;
-    font-size: 24px;
-    color: #6d6c6c;
-    font-weight: bold;
-} */
 
-/* .footer--credits{
-    display: flex;
-    margin-top: 50px;
-    cursor: pointer;
-} */
 .footer--credits__container a{
     text-decoration: none;
 }
@@ -636,12 +746,28 @@ html{
 /* slide */
 .slider-pvc h1{
     font-size: 40px;
-    width: 100%;
     text-align: center;
     padding-top: 15px;
 }
 .slider-pvc p{
     font-size: 17px;
+    width: 100%;
+}
+.slider__details--text{
+    display: flex;
+    flex-direction: column; 
+}
+.slider__details--text p{
+    margin: 16px 0;
+
+}
+.slider__details--text p i{
+    margin: 20px 20px 0 0;
+    position: relative;
+    top: 11px;
+}
+
+.slider-pvc--background1 img{
     width: 100%;
 }
 
@@ -670,7 +796,7 @@ html{
     margin-top: 30px;
 }
 .header-logo__title--section{
-    margin-left: 50px;
+    margin-left: 150px;
 }
 .header-logo__title--section h2{
     font-size: 15px;
@@ -730,15 +856,15 @@ html{
     width: 144px;
     height: 147px;
     object-fit: cover;
+    display: flex;
 }
 .icon-shop:hover{
     cursor: pointer;
 }
-
-.icon-check {
-    width: 20px;
-    height: 20px;
+.icon-shop__estuco{
+    object-fit: contain;
 }
+
 .main__target-shop--check{
     margin-top: 25px;
     display: flex;
@@ -752,6 +878,153 @@ html{
     margin-top: 14px;
 }
 
-/*  */
 
+/* sección de pinturas */
 
+.slider-pinturas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.slider-pinturas--background1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-pinturas__detail{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(270deg, rgba(91, 39, 142, 0.85) 0%, rgba(14, 62, 72, 0.6035) 86.6%);
+   
+}
+.slider-pinturas__detail h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 65px;
+    color: var(--white-soft);
+}
+.slider-pinturas__detail li {
+    list-style: none;
+    margin: 30px 20px;
+}
+.slider-pinturas__detail li p{
+    color: var(--white-soft);
+    padding-left: 16px;
+}
+
+.slider-pinturas__detail li div b{
+    color: var(--black);
+}
+.slider-pinturas__detail img{
+    width: 15px;
+    margin-top: 4px;
+    position: relative;
+    top: 15px;
+}
+
+.main--pinturas{
+font-weight: 900;
+font-size: 33px;
+line-height: 45px;
+text-align: center;
+
+background:  linear-gradient(90.22deg, rgba(122, 237, 8, 0.72) 1%, rgba(63, 17, 160, 0.79) 73.1%, #FF0000 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+/* seccion estilos drywall */
+.section-drywall{
+    width: 100%;
+}
+.section-drywall h1{
+    font-size: 75px;
+    position: relative;
+    left: 190px;
+    top: 40px;
+    color: var(--white);
+    margin: auto;
+
+    background: linear-gradient(269.49deg, #BA4968 88.44%, rgba(66, 67, 57, 0.72) 92.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-drywall--img{
+    height: 500px;
+    background-image: url("../img/Background/drywall-person.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-drywall--img__estuco{
+    width: 90%;
+    font-size: 32px;
+    margin-top: 100px;
+}
+
+.section-drywall--img__estuco li{
+    list-style: none;
+    line-height: 60px;
+    list-style: none;
+    color: var(--white);
+    margin-left: 10px;
+}
+
+.section-drywall--img__estuco img{
+    margin-right: 15px;
+    position: relative;
+    top: 15px;
+}
+
+/* estucos y acabados .html */
+
+.section-estucoYacabados{
+    width: 100%;
+    background-color: #b6b6b4;
+}
+
+.section-estucoYacabados--img{
+    width: 100%;
+    height: 444px;
+    background-image: url("../img/Background/image-lamp-clock.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-estucoYacabados--img h1{
+    margin: auto;
+    font-size: 67px;
+    color: var(--white);
+    position: relative;
+    left: 100px;
+    top: 40px;
+    
+}
+
+.section-estucoYacabados--img__estuco{
+    width: 70%;
+    font-size: 32px;
+    margin-top: 80px;
+}
+.section-estucoYacabados--img__estuco li {
+    list-style: none;
+    line-height: 60px;
+    color: #9E8370;
+}
+.section-estucoYacabados--img__estuco :nth-child(1){
+    margin-left: -70px;
+}
+.section-estucoYacabados--img__estuco :nth-child(2){
+    margin-left: -20px;
+}
+.section-estucoYacabados--img__estuco :nth-child(3){
+    margin-left: 30px;
+}
+.section-estucoYacabados--img__estuco :nth-child(4){
+    margin-left: 70px;
+}

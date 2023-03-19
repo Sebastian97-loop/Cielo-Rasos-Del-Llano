@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,600&       display=swap" rel="stylesheet">
@@ -15,8 +16,37 @@
     <title>Cielos Rasos Del Llano</title>
 </head>
 <body>
+    <div class="menu active" id="menu-responsive">
+        <a href="./index.html">Home</a>
+        <div class="menu-log">
+            <figure class="header-logo__logo menu-log__logo">
+                <a href="./index.html">
+                    <img src="./img/icons/Logo.svg" alt="logo cielo rasos del llano">
+                </a>
+            </figure>
+            <div class="header-logo__title menu-log__tittle">
+                <h2 class="header-logo__title--importer">IMPORTADORA</h2>
+                <h1 class="header-logo__title--title">CIELO RASOS DEL LLANO</h1>
+            </div>
+            <div class="menu-close" id="menu-close">
+                <img id="menu-close" src="./img/icons/Vector-x.svg" alt="">
+            </div>
+        </div>
+        <nav class="header-nav__navigation menu-nav">
+            <ol class="header-nav__navigation--ol menu-nav__ol">
+                <li><a href="./pvc.html">PVC</a></li>
+                <li><a href="./pintura.html">Pinturas</a></li>
+                <li><a href="./drywall.html">Drywall</a></li>
+                <li><a href="./estucos&acabados.html">Estuco y Acabados</a></li>
+            </ol>
+        </nav>
+    </div>
+
     <header id="header" class="header">
         <div  class="header-logo">
+                <div class="header-logo__menu--button" id="open-menu">
+                    <img id="open-menu" src="./img/icons/Menu.svg" alt="">
+                </div>
             <figure class="header-logo__logo">
                 <a href="./index.html">
                     <img src="./img/icons/Logo.svg" alt="logo cielo rasos del llano">
@@ -43,9 +73,9 @@
             <nav class="header-nav__navigation">
                 <ol class="header-nav__navigation--ol">
                     <li><a href="./pvc.html">PVC</a></li>
-                    <li><a href="#">Pintura</a></li>
-                    <li><a href="#">Drywall</a></li>
-                    <li><a href="#">Estuco y Acabados</a></li>
+                    <li><a href="./pintura.html">Pinturas</a></li>
+                    <li><a href="./drywall.html">Drywall</a></li>
+                    <li><a href="./estucos&acabados.html">Estuco y Acabados</a></li>
                 </ol>
             </nav>
             <div class="header-nav__social">
@@ -62,27 +92,34 @@
         <div class="slide fade slider-drywall">
             <figure class="slider-drywall--background">
                 <img src="./img/Background/cielo-rasos1.jpg" alt="house with drywall finishes">
-             </figure>
-             <div class="slider-drywall--details">
+            </figure>
+            <div class="slider-drywall--details">
                 <h1>Acabados en Drywall</h1>
                 <p>Contamos con mas de 12 años de experiencia en acabados con tabla roca o Drywall. Ecuentra nuestro producto aquí</p>
-                <button>Drywall</button>
-             </div>
+                <button><a href="./drywall.html">Drywall</a></button>
+            </div>
         </div>
         <div class="slide fade slider-epoxi">
             <figure class="slider-epoxi--background">
-                <img src="./img/Background/Banner_Pag_Nuevo_Epoxi_Acryl.jpg" alt="paint banner">
-             </figure>
+            </figure>
         </div>
         <div class="slide fade slider-exterior--background">
             <div class="slider-exterior--details">
                 <h1>Dale vida a tu hogar con acabados de alta calidad</h1>
-                <p><i class="icon-check"><img src="./img/icons/check.svg" alt=""></i> Importadores directos</p>
-                <p><i class="icon-check"><img src="./img/icons/check.svg" alt=""></i>Envios a todo el departamento del Meta</p>
-                <button><a href="./#"></a> Pintura</button>
+                <div class="slider-exterior--details-p">
+                    <div>
+                        <i class="icon-check"><img src="./img/icons/check.svg" alt=""></i>
+                        <p>Importadores directos</p>
+                    </div>
+                    <div>
+                        <i class="icon-check"><img src="./img/icons/check.svg" alt=""></i>
+                        <p>Envios a todo el departamento del Meta</p>
+                    </div>
+                </div>
+                <button><a href="./pintura.html">Pintura</a></button>
             </div>
-            <img src="./img/Background/house-exterior-piscina.jpg" alt="house with drywall finishes">
-         </div>
+            <img class="slider-exterior__background--img" src="./img/Background/house-exterior-piscina.jpg" alt="house with drywall finishes">
+        </div>
         <div class="slider-arrow">
                 <div id="arrow-left" class="slider-arrow__left">
                     <img src="./img/icons/Vector-left.svg" alt="icon arrow left">
@@ -91,7 +128,7 @@
                     <img src="./img/icons/Vector-right.svg" alt="icon arrow right">
                 </div>
         </div>
-         <div id="dots-wrapper" class="slide-circle center_xe">
+        <div id="dots-wrapper" class="slide-circle center_xe">
             <div  class="dot-nav slide-circle--1"></div>
             <div class="dot-nav slide-circle--2"></div>
             <div class="dot-nav slide-circle--3"></div>
@@ -101,7 +138,7 @@
     <section class="card">
         <div class="card-container">
               <div class="tajet--transport card-background"><img src="./img/icons/descarga-de-camion.png" alt="truck transport"><h4>Transporte eficaz y confiable</h4></div>
-              <div class="card--smartphone card-background"><img src="./img/icons/Allura-Giant-Phone.png" alt="Phone and a person"><h4>Te vendemos solo lo que necesitas</h4></div>
+              <div class="card--smartphone card-background card2"><img src="./img/icons/Allura-Giant-Phone.png" alt="Phone and a person"><h4>Te vendemos solo lo que necesitas</h4></div>
               <div class="card--quality card-background"><img src="./img/icons/stock-illustration-isometric.png" alt="isometric person work"><h4>Calidad y rendimiento</h4></div>
         </div>
     </section>
@@ -116,15 +153,15 @@
         </div>
         <div class="logo-section__icon-nav">
             <div class="logo-section__icon-nav--drywall">
-                <a href="">Drywall</a>
-                <img src="./img/icons/icon-drywall.svg" alt="icon Drywall">
+                <a href="./drywall.html">Drywall</a>
+                <img src="./img/icons/icon-drywall.svg"  alt="icon Drywall">
             </div>
             <div class="logo-section__icon-nav--eterboard">
-                <a href=""> Eterboard </a>
+                <a href="./drywall.html"> Eterboard </a>
                 <img src="./img/icons/icon-eterboard.svg" alt="icon Eterboard">
             </div>
             <div class="logo-section__icon-nav--pvc">
-                <a href="">PVC</a>
+                <a href="./pvc.html">PVC</a>
                 <img src="./img/icons/icon-pvc.svg" alt="icon pvc">
             </div>
         </div>
@@ -134,11 +171,8 @@
         <div class="section-paint__text">
             <h2>Pinturas</h2>
             <p>Decora tu hogar o negocio con la mejor calidad en <b>Pinturas</b>, encuentra diferentes marcar y precios.</p>
-            <button>Pinturas</button>
+            <button><a href="./pintura.html">Pinturas</a></button>
         </div>
-        <picture class="section-paint__picture">
-            <img src="./img/Background/background-pinturas.jpg" alt="">
-        </picture>
     </section>
 
     <footer class="footer">
@@ -167,5 +201,6 @@
     </footer>
     <script src="./js/carrusel.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/responsive.js"></script>
 </body>
 </html>

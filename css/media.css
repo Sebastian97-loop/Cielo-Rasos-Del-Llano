@@ -1,0 +1,258 @@
+@media screen and (min-width:1280px){
+    .logo{
+        width: 100px;
+    }
+    .header-logo__title {
+        margin-left: 127px;
+    }
+    .header-logo__title h2{
+        font-size: 12px;
+    }
+    .header-logo__title h1{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:1030px){
+    .slider-drywall--background img {
+        height: 100%;
+    }
+    .slider-drywall--details p {
+        font-size: 25px;
+    }
+    .slider-pvc p {
+        font-size: 17px;
+    }
+    .slider-pvc p img{
+        width: 30px;
+    }
+
+
+    .slide-container__logo{
+        display: none;
+    }
+
+    .slider-exterior--details h1 {
+        font-size: 24px;
+        margin: 30px 80px 30px;
+    } 
+
+    .header-logo__title--importer {
+        font-size: 12px;
+        width: 120px;
+    }
+    .header-logo__title--title{
+        font-size: 14px;
+    }
+
+    .header-logo__search{
+        width: 233px;
+    }
+    .logo-section {
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .slider-pvc h1 {
+        font-size: 30px;
+    }
+    .slider-pvc--background1 img{
+        width: 80%;
+        margin-left: 110px;
+    }
+
+    .slider__details--text p {
+        margin: 6px 0;
+        width: 300px;
+    }
+
+}
+
+/* Tablet */
+
+@media screen and (max-width:800px){
+    .slide-circle {
+        width: 16%;
+    }
+    .slider-exterior--details  {
+        width: 400px; 
+    }  
+    .slider-exterior--details h1 {
+        font-size: 21px;
+        width: 90%;
+        margin: 30px;
+        text-align: center;
+    }
+    .slider-drywall--details p {
+        font-size: 20px;
+    }
+
+    .header-logo__shop img {
+        width: 100px;
+    }
+
+    .header-logo__logo img {
+        left: 0;
+    }
+
+    .logo-section__icon-nav div a{
+        width: 190px;
+    }
+
+    .section-paint {
+        width: 100%;
+        height: 450px;
+        background: linear-gradient(270deg, rgba(91, 39, 142, 0.85) 0%, rgba(14, 62, 72, 0.6035) 86.6%);
+        display: flex;
+        text-align: center;
+        margin: 0;
+    }
+    .section-paint__text{
+        margin: auto;
+        left: 0;
+        width: 88%;
+        text-align: center;
+        
+    }
+    .section-paint__text p{
+        color: white;
+    }
+}
+
+/* Dispositivo tablet */
+
+@media screen and (max-width:700px){
+    .header-logo__title {
+        margin: 36px 0 0 auto;
+    }
+    
+    .header-logo__title--importer {
+        font-size: 10px;
+    }
+    .header-logo__title--title {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .header-nav__navigation--ol li {
+        font-size: 13px;
+    }
+    .header-nav__social {
+        left: 0;
+    }
+    .header-nav__social--figure img {
+        margin-right: 0;
+    }
+    .header-nav__social--figure img:nth-child(2) {
+        width: 25px;
+        margin: 0 40px;
+    }
+
+    .card-background {
+        width: 200px;
+    }
+    .tajet--transport img {
+        width: 190px;
+        padding-bottom: 98px;
+        position: relative;
+        top: 48px;
+    }
+}
+
+/* Dispositivo movil */
+
+@media screen and (max-width:700px){
+    .menu{
+        display: block;
+    }
+    .header-logo__menu--button{
+        display: block;
+    }
+    .header-logo__menu {
+        display: block;
+    }
+    .header-logo__search {
+        display: none;
+    }
+    .header-nav{
+        display: none;
+    }
+
+    .slider-arrow {
+        width: 85%;
+    }
+
+    /* slide Drywwall */
+    .slider-drywall--background{
+        height: 100%;
+    }
+    .slider-drywall--details{
+        height: 100%;
+        position: relative;
+        bottom: 400px;   
+        background: linear-gradient(269.73deg, #1A1C19 -0.58%, #5c585157 58.61%);
+    }
+
+    .slider-drywall{
+        display: block !important;
+    }
+    /* .slider-exterior--background{
+        display: block !important;
+    } */
+    .slider-exterior__background--img {
+        position: absolute;
+        bottom: 0px;
+        filter: brightness(0.5);
+    }
+
+    .slider-exterior--details {
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        color: #fff;
+        margin-left: calc(50% - -17px);
+    }
+   
+    .slider-exterior--details-p {
+        margin: auto;
+    }
+    .slider-exterior--details p {
+        padding-left: 15px;
+    }
+    .slider-exterior--details button{
+        bottom: 20px;
+    }
+
+    .slider-arrow{
+        top: 260px;
+     }
+     .slide-circle{
+        top: 343px;
+     }
+
+     /* tarjetas */
+
+     .card2{
+        display: none;
+     }
+   
+     .section-paint__text h2 {
+        font-size: 100px;
+     }
+
+     /* footer */
+
+     .footer-contain{
+        grid-template-columns: 1fr 1fr;
+     }
+     .footer--credits{
+        position: relative;
+        left: calc(50% - 0px);
+     }
+}
