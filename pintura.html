@@ -17,8 +17,37 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="header"  class="header">
+    <div class="menu active" id="menu-responsive">
+        <a href="./index.html">Home</a>
+        <div class="menu-log">
+            <figure class="header-logo__logo menu-log__logo">
+                <a href="./index.html">
+                    <img src="./img/icons/Logo.svg" alt="logo cielo rasos del llano">
+                </a>
+            </figure>
+            <div class="header-logo__title menu-log__tittle">
+                <h2 class="header-logo__title--importer">IMPORTADORA</h2>
+                <h1 class="header-logo__title--title">CIELO RASOS DEL LLANO</h1>
+            </div>
+            <div class="menu-close" id="menu-close">
+                <img id="menu-close" src="./img/icons/Vector-x.svg" alt="">
+            </div>
+        </div>
+        <nav class="header-nav__navigation menu-nav">
+            <ol class="header-nav__navigation--ol menu-nav__ol">
+                <li><a href="./pvc.html">PVC</a></li>
+                <li><a href="./pintura.html">Pinturas</a></li>
+                <li><a href="./drywall.html">Drywall</a></li>
+                <li><a href="./estucos&acabados.html">Estuco y Acabados</a></li>
+            </ol>
+        </nav>
+    </div>
+
+    <header id="header" class="header">
         <div  class="header-logo">
+                <div class="header-logo__menu--button" id="open-menu">
+                    <img id="open-menu" src="./img/icons/Menu.svg" alt="">
+                </div>
             <figure class="header-logo__logo">
                 <a href="./index.html">
                     <img src="./img/icons/Logo.svg" alt="logo cielo rasos del llano">
@@ -45,7 +74,7 @@
             <nav class="header-nav__navigation">
                 <ol class="header-nav__navigation--ol">
                     <li><a href="./pvc.html">PVC</a></li>
-                    <li><a href="./pintura.html"><b class="header-nav__navigation--ol-border">Pinturas</b></a></li>
+                    <li><a href="./pintura.html">Pinturas</a></li>
                     <li><a href="./drywall.html">Drywall</a></li>
                     <li><a href="./estucos&acabados.html">Estuco y Acabados</a></li>
                 </ol>
@@ -254,5 +283,6 @@
         </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/responsive.js"></script>
 </body>
 </html>

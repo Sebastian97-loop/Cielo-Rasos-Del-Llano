@@ -643,23 +643,6 @@ body{
 .section-paint__text p b{
     color: var(--quince-jelly);
 }
-.section-paint__text button{
-    width: 220px;
-    height: 50px;
-    background: #F6636F;
-    border-radius: 5px;
-    color: var(--white);
-    font-size: 23px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    margin: 20px auto;
-}
-.section-paint__text button a{
-    text-decoration: none;
-    color: var(--white);
-}
 
 .section-paint__picture{
     margin-top: 30px

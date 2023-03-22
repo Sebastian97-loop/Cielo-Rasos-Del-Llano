@@ -218,7 +218,7 @@
         color: #fff;
         margin-left: calc(50% - -17px);
     }
-   
+
     .slider-exterior--details-p {
         margin: auto;
     }
@@ -231,28 +231,102 @@
 
     .slider-arrow{
         top: 260px;
-     }
-     .slide-circle{
+    }
+    .slide-circle{
         top: 343px;
-     }
+    }
 
      /* tarjetas */
 
-     .card2{
+    .card2{
         display: none;
-     }
-   
-     .section-paint__text h2 {
+    }
+
+    .section-paint__text h2 {
         font-size: 100px;
-     }
+    }
 
      /* footer */
 
-     .footer-contain{
+    .footer-contain{
         grid-template-columns: 1fr 1fr;
-     }
-     .footer--credits{
+    }
+    .footer--credits{
         position: relative;
         left: calc(50% - 0px);
-     }
+    }
+}
+
+@media screen and (max-width:600px){
+    .logo-section__logo img{
+        width: 350px;
+    }
+    .logo-section__icon-nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "header header"
+        "main main ";
+    }
+    .logo-section__icon-nav--pvc{
+        grid-area: main;
+    }
+    .logo-section__icon-nav--pvc a{
+        margin-top: 20px;
+    } 
+}
+
+@media screen and (max-width:375px){
+    /* header */
+    .header-logo__logo img {
+        width:  100px;
+    }
+    .header-logo__shop img {
+        width: 64px;
+    }
+    .header-logo__shop--accountant {
+        width: 20px;
+        height: 20px;
+    }
+    .header-logo__title--importer {
+        font-size: 7px;
+        width: 77px;
+    }
+    .header-logo__title--title {
+        font-size: 7px;
+    }
+
+
+    /* footer section */
+
+    .footer-contain{
+        display: block;
+    }
+
+    .footer__log--img {
+        width: 145px;
+    }
+    .footer--credits {
+        left: calc(50% - 0px);
+        display: block;
+    }
+    .footer--credits__container img:hover {
+        width: 50px;
+    }
+    .footer__log {
+        display: none;
+    }
+    .footer--nav {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 90px 90px 90px;
+        grid-template-rows: none;
+        place-items: center;
+    }
+    .instagram {
+        position: relative;
+        left: 0px; 
+    }
+
 }
