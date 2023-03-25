@@ -17,8 +17,8 @@
 </head>
 <body>
     <div class="menu active" id="menu-responsive">
-        <a href="./index.html">Home</a>
         <div class="menu-log">
+            <a href="./index.html">Home</a>
             <figure class="header-logo__logo menu-log__logo">
                 <a href="./index.html">
                     <img src="./img/icons/Logo.svg" alt="logo cielo rasos del llano">
@@ -79,11 +79,9 @@
                 </ol>
             </nav>
             <div class="header-nav__social">
-                <figure class="header-nav__social--figure">
                     <img src="./img/icons/whatsapp.png" alt="whatsapp icon">
                     <img src="./img/icons/facebook.png" alt="facebook icon">
-                    <img src="./img/icons/instagram.png" alt="instagram icon">
-                </figure>
+                    <img class="header-nav__social--figure-img3" src="./img/icons/instagram.png" alt="instagram icon">
             </div>
         </div>
     </header>
@@ -99,8 +97,15 @@
                 <button><a href="./drywall.html">Drywall</a></button>
             </div>
         </div>
-        <div class="slide fade slider-epoxi">
-            <figure class="slider-epoxi--background">
+        <div class="slide fade slider-pvc-index">
+            <div class="slider-pvc__text">
+                <h1 class="slider-pvc__h1">Cielo rasos en <b>PVC</b></h1>
+                <p class="slider-pvc__text-p">Renueva tu hogar o negocio con este producto diseñado para embellecer y durar por mucho tiempo</p>
+                <div class="slider-pvc__container">
+                    <a class="slider-pvc__container--a" href="./pvc.html">PVC</a>
+                </div>
+            </div>
+            <figure class="slider-pvc__background">
             </figure>
         </div>
         <div class="slide fade slider-exterior--background">
@@ -113,7 +118,7 @@
                     </div>
                     <div>
                         <i class="icon-check"><img src="./img/icons/check.svg" alt=""></i>
-                        <p>Envios a todo el departamento del Meta</p>
+                        <p class="slider-exterior--details-p__p">Envios a todo el departamento del Meta</p>
                     </div>
                 </div>
                 <button><a href="./pintura.html">Pintura</a></button>
@@ -198,6 +203,7 @@
             </div>
         </div>
     </footer>
+    
     <script src="./js/carrusel.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/responsive.js"></script>
