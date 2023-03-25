@@ -1,5 +1,5 @@
-@media screen and (min-width:1280px){
-    .logo{
+@media screen and (max-width:1280px){
+    /* .logo{
         width: 100px;
     }
     .header-logo__title {
@@ -10,13 +10,26 @@
     }
     .header-logo__title h1{
         font-size: 20px;
-    }
+    } */
 
+      /* slide pvc index */
+
+    .slider-pvc__h1{
+        font-size: 44px;
+    }
+    .slider-pvc__text-p{
+        font-size: 26px;
+        top: 0;
+    }
+    .slider-pvc__container{
+        margin-top: 60px;
+    }
 }
 
 @media screen and (max-width:1030px){
     .slider-drywall--background img {
         height: 100%;
+
     }
     .slider-drywall--details p {
         font-size: 25px;
@@ -28,6 +41,9 @@
         width: 30px;
     }
 
+    .slider-pvc__container{
+        margin-top: 30px;
+    }
 
     .slide-container__logo{
         display: none;
@@ -78,6 +94,7 @@
 @media screen and (max-width:800px){
     .slide-circle {
         width: 16%;
+        z-index: 3000;
     }
     .slider-exterior--details  {
         width: 400px; 
@@ -118,11 +135,27 @@
         width: 88%;
         text-align: center;
         
+
     }
     .section-paint__text p{
         color: white;
     }
+
+ /* slide pvc index */
+    .slider-pvc__h1{
+        font-size: 30px;
+    }
+    .slider-pvc__text-p{
+        font-size: 24px;
+    }
+    .slider-pvc__container{
+        margin-top: 10px;
+    }
 }
+
+
+
+
 
 /* Dispositivo tablet */
 
@@ -145,10 +178,10 @@
     .header-nav__social {
         left: 0;
     }
-    .header-nav__social--figure img {
+    .header-nav__social img {
         margin-right: 0;
     }
-    .header-nav__social--figure img:nth-child(2) {
+    .header-nav__social img:nth-child(2) {
         width: 25px;
         margin: 0 40px;
     }
@@ -169,6 +202,9 @@
 @media screen and (max-width:700px){
     .menu{
         display: block;
+    }
+    .menu-log__tittle{
+        margin-top: 80px;
     }
     .header-logo__menu--button{
         display: block;
@@ -212,11 +248,10 @@
 
     .slider-exterior--details {
         z-index: 100;
-        width: 100%;
+        width: 200%;
         height: 100%;
         background-color: transparent;
         color: #fff;
-        margin-left: calc(50% - -17px);
     }
 
     .slider-exterior--details-p {
@@ -258,6 +293,14 @@
 }
 
 @media screen and (max-width:600px){
+    .fade{
+        grid-template-columns: 1fr;
+    }
+
+    .slider-exterior--details{
+        width: 100%;
+    }
+
     .logo-section__logo img{
         width: 350px;
     }
@@ -275,9 +318,41 @@
     .logo-section__icon-nav--pvc a{
         margin-top: 20px;
     } 
+
+      /* slide pvc index */
+
+      .slider-pvc-index{
+        grid-template-columns: 1fr;
+    } 
+    .slider-pvc__text{
+        z-index: 2000;
+        width: 80%;
+    }
+    .slider-pvc__h1{
+        font-size: 35px;
+    }
+    .slider-pvc__text-p{
+        top: 30px;
+        font-size: 20px;
+    }
+    .slider-pvc__container{
+        margin-top: 120px;
+    }
+
+    .slider-pvc__background{
+        background-image: url(../img/Background/background-pvc-black\ 1.jpg);
+        position: absoulte;
+        z-index: 100;
+        position: absolute;
+        height: 105%;
+        background-position: center;
+        background-size: cover;
+    }
+
+
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:400px){
     /* header */
     .header-logo__logo img {
         width:  100px;
@@ -296,6 +371,64 @@
     .header-logo__title--title {
         font-size: 7px;
     }
+
+/* slide drywall */
+    .slider-drywall--background {
+        height: 83%;    
+    }
+
+ /* slide pvc index */
+
+    .slider-pvc__h1{
+        font-size: 40px;
+    }
+    .slider-pvc__text-p{
+        font-size: 25px;
+    }
+    .slider-pvc__container{
+        margin-top: 60px;
+        width: 150px;
+    }
+    .slider-pvc__background{
+        height: 100%;
+    }
+
+    .slide-circle {
+        top: 380px;
+        width: 27%;
+    }
+    .slider-arrow {
+        top: 315px;
+    }
+
+    /* secction card */
+    .card{
+        height: 1100px;
+        padding-top: 50px;
+    }
+    .card2 {
+        display: block;
+    }
+    .card-container {
+        width: 100%;
+        display: grid;
+    }
+    .card-background {
+        width: 324px;
+        margin-top: 20px;
+    }
+
+    /* slide */
+
+    .slider-arrow {
+        width: 74%;
+    }
+
+    .fade{
+        height: 480px;
+        grid-template-columns: 1fr;
+    }
+
 
 
     /* footer section */
