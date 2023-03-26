@@ -110,7 +110,7 @@
     }
 
     .header-logo__shop img {
-        width: 100px;
+        width: 79px;
     }
 
     .header-logo__logo img {
@@ -220,7 +220,7 @@
     }
 
     .slider-arrow {
-        width: 85%;
+        width: 80%;
     }
 
     /* slide Drywwall */
@@ -278,7 +278,7 @@
     }
 
     .section-paint__text h2 {
-        font-size: 100px;
+        font-size: 80px;
     }
 
      /* footer */
@@ -286,10 +286,7 @@
     .footer-contain{
         grid-template-columns: 1fr 1fr;
     }
-    .footer--credits{
-        position: relative;
-        left: calc(50% - 0px);
-    }
+
 }
 
 @media screen and (max-width:600px){
@@ -349,17 +346,27 @@
         background-size: cover;
     }
 
+    .footer__log {
+        display: none;
+    }
+
 
 }
 
 @media screen and (max-width:400px){
     /* header */
+    .header-logo__menu--button--menu{
+        width: 40px;
+        margin-top: 4px;
+    }
+    
     .header-logo__logo img {
-        width:  100px;
+        width:  70px;
     }
     .header-logo__shop img {
         width: 64px;
     }
+  
     .header-logo__shop--accountant {
         width: 20px;
         height: 20px;
@@ -414,7 +421,7 @@
         display: grid;
     }
     .card-background {
-        width: 324px;
+        width: 80%;
         margin-top: 20px;
     }
 
@@ -429,7 +436,28 @@
         grid-template-columns: 1fr;
     }
 
+    /* logo seccion */
+    
+    .logo-section__title h1{
+        font-size: 70px;
+    }
+    .logo-section__icon-nav div a {
+        width: 150px;
+        font-size: 20px;
+        margin-bottom: 34px;
+    }
+    .logo-section__icon-nav div img{
+        width: 140px;
+    }
+    
+    /* pinturas */
 
+    .section-paint__text h2 {
+        font-size: 60px;
+    }
+    .section-paint__text p {
+        font-size: 28px;
+    }
 
     /* footer section */
 
@@ -441,15 +469,13 @@
         width: 145px;
     }
     .footer--credits {
-        left: calc(50% - 0px);
-        display: block;
+            display: flex;
+            margin: 10px auto;
     }
     .footer--credits__container img:hover {
         width: 50px;
     }
-    .footer__log {
-        display: none;
-    }
+  
     .footer--nav {
         margin-top: 30px;
         display: grid;
@@ -461,5 +487,20 @@
         position: relative;
         left: 0px; 
     }
+}
 
+@media screen and (max-width:350px){
+    .slider-arrow__left {
+        width: 50px;
+        height: 50px;
+    }
+    .slider-arrow__right {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .logo-section__logo img{
+        width: 270px
+    }
 }
