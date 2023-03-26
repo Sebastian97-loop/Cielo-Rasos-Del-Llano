@@ -55,11 +55,13 @@ body{
     display: flex;
     align-items: center;
 }
-.menu-log__logo a img{
-    /* position: relative;
+
+/* .menu-log__logo a img{
+    position: relative;
     left: 40px;
-    bottom: 70px; */
-}
+    bottom: 70px;
+} */
+
 .menu-log__tittle{
     color: var(--white);
     margin-top: 65px;
