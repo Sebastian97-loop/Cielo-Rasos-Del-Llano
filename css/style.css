@@ -56,12 +56,6 @@ body{
     align-items: center;
 }
 
-/* .menu-log__logo a img{
-    position: relative;
-    left: 40px;
-    bottom: 70px;
-} */
-
 .menu-log__tittle{
     color: var(--white);
     margin-top: 65px;
@@ -1021,7 +1015,6 @@ background-clip: text;
     list-style: none;
     color: var(--white);
     margin: 0;
-    /* margin-left: 10px; */
 }
 
 .section-drywall__img--estuco img{
@@ -1058,9 +1051,6 @@ background-clip: text;
 .section-estucoYacabados--img__estuco {
     margin-top: 80px;
     font-size: 32px;
-    /* display: grid;
-    grid-template-columns: 1fr; */
-
 }
 .section-estucoYacabados-detail {
     line-height: 60px;
@@ -1079,15 +1069,3 @@ background-clip: text;
     background-color: #9e8370;
     margin: 0;
 }
-/* .section-estucoYacabados--img__estuco :nth-child(1){
-    margin-left: -70px;
-}
-.section-estucoYacabados--img__estuco :nth-child(2){
-    margin-left: -20px;
-}
-.section-estucoYacabados--img__estuco :nth-child(3){
-    margin-left: 30px;
-}
-.section-estucoYacabados--img__estuco :nth-child(4){
-    margin-left: 70px;
-} */

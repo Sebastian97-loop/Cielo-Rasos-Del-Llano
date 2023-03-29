@@ -1,17 +1,4 @@
 @media screen and (max-width:1280px){
-    /* .logo{
-        width: 100px;
-    }
-    .header-logo__title {
-        margin-left: 127px;
-    }
-    .header-logo__title h2{
-        font-size: 12px;
-    }
-    .header-logo__title h1{
-        font-size: 20px;
-    } */
-
       /* slide pvc index */
 
     .slider-pvc__h1{
@@ -411,12 +398,6 @@
         display: none;
     }
     
-    /* estucos y acabados index */
-
-    /* .section-estucoYacabados--img__estuco li{
-        font-size: 20px;
-        margin: auto;
-    } */
 }
 
 @media screen and (max-width:400px){
