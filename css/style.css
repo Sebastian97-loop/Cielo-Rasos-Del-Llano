@@ -739,9 +739,14 @@ body{
     position: relative;
     left: 70px;
 }
-.footer__log{
+.footer__log {
     display: flex;
     flex-direction: column;
+    color: var(--blue);
+ 
+}
+.footer__log--a{
+    text-decoration: none;
     color: var(--blue);
 }
 .footer__log--img{
@@ -752,9 +757,7 @@ body{
 .footer--credits__container a{
     text-decoration: none;
 }
-/* .footer--credits__container p{
-    text-align: center;
-} */
+
 .footer--credits__container p:hover{
     color: #100fe9;
 }
