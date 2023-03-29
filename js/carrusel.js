@@ -37,7 +37,7 @@ function show_slide(index) {
     })
   });
 
-  // setInterval(() => {
-  //   show_slide(++slider_index)
-  // }, 4000);
+  setInterval(() => {
+    show_slide(++slider_index)
+  }, 4000);
 

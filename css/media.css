@@ -77,10 +77,6 @@
     .slider-pvc h1 {
         font-size: 30px;
     }
-    .slider-pvc--background1 img{
-        width: 80%;
-        margin-left: 110px;
-    }
 
     .slider__details--text p {
         margin: 6px 0;
@@ -151,6 +147,11 @@
     .slider-pvc__container{
         margin-top: 10px;
     }
+
+
+    .main h1{
+        font-size: 24px;
+    }
 }
 
 
@@ -205,6 +206,8 @@
     }
     .menu-log__tittle{
         margin-top: 80px;
+        position: relative;
+        left: 28px;
     }
     .header-logo__menu--button{
         display: block;
@@ -237,9 +240,6 @@
     .slider-drywall{
         display: block !important;
     }
-    /* .slider-exterior--background{
-        display: block !important;
-    } */
     .slider-exterior__background--img {
         position: absolute;
         bottom: 0px;
@@ -286,6 +286,61 @@
     .footer-contain{
         grid-template-columns: 1fr 1fr;
     }
+
+    /* pvc index */
+    .slider-pvc{
+        grid-template-columns: 1fr;
+    }
+    .slider__details{
+        z-index: 100;
+    }
+    .slider__details h1{
+        color: white;
+    }
+    .slider__details h1 b{
+        color: #F49300;
+    }
+
+    .slider__details--text{
+        margin-left: 53px;
+    }
+    .slider__details--text p{
+        margin-top: 13px;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .slider-pvc--background1 {
+        background-image: url("../img/Background/pvc-madera-brillante-armario.jpg");
+        height: 70%;
+        width: 100%;
+        background-size: cover;
+        position: absolute;
+    }
+
+    /* index Pnturas */
+
+    .slider-pinturas{
+        grid-template-columns: 1fr;
+    }
+    .slider-pinturas--background1{
+        display: none;
+    }
+    .slider-pinturas__detail--text{
+        width: 80%;
+    }
+
+    /* estucos y acabados */
+
+
+    .section-estucoYacabados--img h1{
+        font-size: 40px;
+    }
+    .section-estucoYacabados-detail p{
+        font-size: 22px;
+    }
+
+
 
 }
 
@@ -350,7 +405,18 @@
         display: none;
     }
 
+    /* index pvc */
 
+    .side{
+        display: none;
+    }
+    
+    /* estucos y acabados index */
+
+    /* .section-estucoYacabados--img__estuco li{
+        font-size: 20px;
+        margin: auto;
+    } */
 }
 
 @media screen and (max-width:400px){
@@ -362,6 +428,8 @@
     
     .header-logo__logo img {
         width:  70px;
+
+
     }
     .header-logo__shop img {
         width: 64px;
@@ -486,6 +554,15 @@
     .instagram {
         position: relative;
         left: 0px; 
+    }
+
+    
+    /* estucos y acabados */
+
+
+    .section-estucoYacabados--img h1{
+        font-size: 30px;
+        left: 44px;
     }
 }
 
